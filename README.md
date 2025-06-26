@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-👉 _Coming soon_ 
+👉 https://shorturl.at/uh2Ei
 
 ---
 
