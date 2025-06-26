@@ -1,0 +1,89 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: all 350ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+    font-weight: bold;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.5rem solid #56a5eb;
+    border-radius: 24px;
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full {
+    height: 3.1rem;
+    background-color: #56a6eba3;
+    border-radius: 24px;
+    width: 0%;
+}
+
+#loader {
+    width: fit-content;
+    font-size: 40px;
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #000;
+    background:
+        radial-gradient(1.13em at 50% 1.6em, #000 99%, #0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+        radial-gradient(1.13em at 50% -0.8em, #0000 99%, #000 101%) 50% .8em/3.2em 100% repeat-x text;
+    animation: l9 2s linear infinite;
+}
+
+#loader:before {
+    content: "Loading";
+}
+
+@keyframes l9 {
+    to {
+        background-position: calc(50% + 1.6em) 0, calc(50% + 3.2em) .8em
+    }
+}
